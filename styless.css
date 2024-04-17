@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
+body {
+    font-family: Jost;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #000;
+}
+
+.header {
+    padding: 20px 0;
+    background-color: #000;
+    text-align: center;
+}
+
+.header h1 {
+    color: #fffb2c;
+    font-size: 36px;
+    margin: 0;
+}
+
+.hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-title {
+    color: #fffb2c;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.about {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between; /* Равномерное распределение пространства между элементами */
+    align-items: flex-start;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+.about-photo {
+    max-width: 350px; /* Увеличим максимальную ширину до 350 пикселей */
+    width: 100%; /* Установим ширину на 100% для адаптивности */
+    height: auto; /* Автоматическая высота, чтобы сохранить пропорции */
+    border-radius: 50%; /* Оставляем круглую форму, если необходимо */
+    margin-top: 65px; /* Добавим отступ сверху в 20 пикселей */
+    margin-right: 50px; /* Добавлен отступ справа */
+}
+
+
+
+.about-info {
+    flex: 1;
+}
+
+.about h2 {
+    color: #fff;
+    font-size: 36px; /* Увеличил размер заголовка */
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px; /* Уменьшил размер текста */
+    line-height: 1.6; /* Увеличил межстрочный интервал */
+}
+
+.footer {
+    padding: 20px 0;
+    background-color: #000;
+    text-align: center;
+}
+
+/* Дополнительные стили для раздела About Me */
+.about-info {
+    color: white; /* Белый текст */
+    font-size: 18px; /* Увеличенный размер текста */
+}
+
+.about-info h2 {
+    color: yellow; /* Желтый заголовок */
+}
+
+.hero-subtitle {
+    text-shadow: 0 0 10px #fffb2c; /* Желтая тень за текстом */
+}
+
+.about-info ul {
+    list-style-type: none; /* Убираем маркеры */
+    padding-left: 0; /* Убираем отступ слева */
+    margin-top: 30px; /* Увеличиваем отступ сверху для списка */
+}
+
+.about-info ul li {
+    margin-bottom: 25px; /* Дополнительное расстояние между пунктами */
+}
+
+.about-info ul li strong {
+    display: inline-block; /* Размещаем в строчку */
+    width: 150px; /* Фиксированная ширина для полей */
+}
+
+/* Стили для значків FontAwesome */
+.social-icons {
+    margin-top: 20px; /* Відступ від тексту */
+}
+
+.social-icons a {
+    color: #fffb2c; /* Колір значків */
+    font-size: 40px; /* Розмір значків */
+    margin-right: 10px; /* Відступ між значками */
+}
+
+
+.mort {
+    background: rgba(0, 0, 0, 0.16);
+    border: 4px rgb(255, 251, 44) solid;
+    border-radius: 30px;
+    width: 45%; /* Задаем ширину блока */
+}
+
+.design-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    min-height: 100vh;
+    padding: 100px 0;
+}
+
+.design {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline {
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-content {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px rgba(112, 112, 112, 0.98);
+    box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px rgba(112, 112, 112, 0.98);
+    border-radius: 5px;
+    color: white;
+    padding: 1.75rem;
+    transition: 0.4s ease;
+    overflow-wrap: break-word !important;
+    margin: 1rem;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+.timeline-component {
+    margin: 0px 20px 20px 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .timeline {
+        display: grid;
+        grid-template-columns: 1fr 3px 1fr;
+    }
+
+    .timeline-middle {
+        position: relative;
+        background-image: linear-gradient(45deg, rgba(255, 143, 31, 0.92), #fffb2c, #8A2387);
+        width: 3px;
+        height: 100%;
+    }
+
+    .main-middle {
+        opacity: 0;
+    }
+
+    .timeline-circle {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-image: linear-gradient(45deg, rgba(255, 143, 31, 0.92), #fffb2c, #8A2387);
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+}

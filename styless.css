@@ -73,6 +73,7 @@ body {
 }
 
 .about p {
+    margin: 20px;
     font-size: 18px; /* Уменьшил размер текста */
     line-height: 1.6; /* Увеличил межстрочный интервал */
 }
@@ -128,7 +129,9 @@ body {
     background: rgba(0, 0, 0, 0.16);
     border: 4px rgb(255, 251, 44) solid;
     border-radius: 30px;
-    width: 45%; /* Задаем ширину блока */
+    width: 50%; /* Задаем ширину блока */
+    margin: 20px;
+
 }
 
 .design-section {
